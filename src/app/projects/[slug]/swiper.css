@@ -1,0 +1,30 @@
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgb(6 182 212) !important;
+  background-color: rgb(6 182 212 / 0.1);
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 9999px;
+  transition: all 0.2s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgb(6 182 212 / 0.2);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.2rem !important;
+  font-weight: bold;
+}
+
+.swiper-pagination-bullet {
+  background: rgb(6 182 212) !important;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: rgb(6 182 212) !important;
+}

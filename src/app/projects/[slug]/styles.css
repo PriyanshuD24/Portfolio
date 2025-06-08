@@ -1,0 +1,39 @@
+/* Custom styles for Swiper */
+.swiper {
+  --swiper-theme-color: rgb(6, 182, 212); /* Cyan-500 */
+  --swiper-navigation-size: 24px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: rgba(6, 182, 212, 0.1);
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(6, 182, 212, 0.2);
+}
+
+.swiper-pagination-bullet {
+  background: rgb(6, 182, 212) !important;
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+}
+
+/* Dark mode adjustments */
+.dark .swiper-button-prev,
+.dark .swiper-button-next {
+  background-color: rgba(6, 182, 212, 0.15);
+}
+
+.dark .swiper-button-prev:hover,
+.dark .swiper-button-next:hover {
+  background-color: rgba(6, 182, 212, 0.25);
+}
