@@ -58,7 +58,7 @@ const MyInfo = () => {
     },
   ];
   return (
-    <div className="max-w-[320px] w-full  sticky top-4 sm:top-8  h-fit bg-[#1E1E1F]  rounded-xl shadow border border-gray-100/10 p-4 md:p-6 space-y-3">
+    <div className=" w-[320px]   sticky top-4 sm:top-8  h-fit bg-[#1E1E1F]  rounded-xl shadow border border-gray-100/10 p-4 md:p-6 space-y-3">
       <div className="flex items-center flex-col justify-center gap-4 border-b-[1px] border-gray-100/10 pb-3">
         <div className="bg-[#373738] p-1 rounded-xl w-fit mx-auto ">
           {/* image */}
@@ -72,9 +72,9 @@ const MyInfo = () => {
         </div>
         <MainHeading className={"text-center"}>Priyanshu Dhawan</MainHeading>
         <ParaText
-          className={"bg-[#373738]/70 w-fit rounded-xl px-2 py-1 mx-auto "}
+          className={"bg-[#373738]/70 w-fit rounded-xl px-2 py-1 mx-auto text-center"}
         >
-          Software Developer
+          Full Stack Developer · MERN
         </ParaText>
       </div>
       <div className="space-y-3">

@@ -35,7 +35,7 @@ const MainLayout = async({ children }: Props) => {
 
       <MyInfo/>
 
-      <div className="  grow  bg-[#1E1E1F] rounded-xl shadow border border-gray-100/10  relative ">
+      <div className="  flex-1 min-w-0  bg-[#1E1E1F] rounded-xl shadow border border-gray-100/10  relative ">
         <Navmenu navItems={navItems} />
         {children}
       </div>

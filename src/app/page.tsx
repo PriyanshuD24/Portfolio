@@ -8,54 +8,56 @@ import { Skills } from "@/utils/constants";
 import Marquee from "react-fast-marquee";
 import { BsDatabase } from "react-icons/bs";
 import { CiGlobe } from "react-icons/ci";
-import { FaDocker, FaReact } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
 
 export default function Home() {
   const expertise = [
     {
       label: "Frontend Development",
       description:
-        "Crafting beautiful, responsive UIs with modern tools like React, Tailwind, and TypeScript.",
+        "Building production-grade UIs with React, Next.js, Redux, Zustand, React Query, React Flow, React DnD, TanStack Table, shadcn/ui, MUI, and Chakra UI.",
       icon: FaReact,
     },
     {
       label: "Backend Development",
       description:
-        "Building fast and scalable APIs using Node.js, Express, and MongoDB.",
+        "Designing scalable REST APIs with Node.js and Express.js. Experienced with real-time SSE, Worker Threads, JWT auth, and MongoDB / PostgreSQL.",
       icon: BsDatabase,
     },
     {
-      label: "Web Development",
+      label: "Full Stack Engineering",
       description:
-        "Delivering full-stack web apps that seamlessly blend frontend elegance with backend power.",
+        "Shipping end-to-end features on CRM, fintech, and e-commerce platforms with measurable business impact across 2+ years in production environments.",
       icon: CiGlobe,
     },
     {
-      label: "Devops engineering",
+      label: "TypeScript & DevOps",
       description:
-        "Automating deployments and infrastructure using Docker, GitHub Actions, and cloud tools.",
-      icon: FaDocker,
+        "Strong TypeScript across frontend and backend. CI/CD with GitHub Actions, containerisation with Docker, and cloud deployments on AWS (EC2, S3, CloudFront, Lambda).",
+      icon: SiTypescript,
     },
   ];
   return (
     <HeadingWrapper heading={"About Me"}>
-    <div className="space-y-8  ">
-      <div className="space-y-2">
-        <ParaText>
-        {` I'm a passionate Full Stack Developer with a strong focus on modern frontend technologies. I specialize in building clean, responsive, and accessible interfaces using React, Next.js, Tailwind CSS, MUI, Chakra UI, and drag-and-drop libraries like React DnD. I enjoy turning complex problems into intuitive user experiences.`}
-
-
+    <div className="space-y-8">
+      <div className="space-y-3">
+        <ParaText className="!text-sm md:!text-base leading-relaxed text-gray-300">
+          {`Results-driven Full Stack Developer with 2+ years of experience building scalable web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js). Proficient in TypeScript, RESTful APIs, real-time systems with Server-Sent Events (SSE), and cloud deployment on AWS.`}
         </ParaText>
-        <ParaText>
-    {` On the backend, I work comfortably with Node.js, MongoDB (Mongoose), PostgreSQL, and Prisma to develop scalable APIs and data models. I also have hands-on experience with DevOps tools and workflows, including Docker, AWS EC2, and GitHub Actions for automated deployments. I’m driven by a love for building meaningful products, writing maintainable code, and continuously learning better ways to solve problems.`}
+        <ParaText className="!text-sm md:!text-base leading-relaxed text-gray-300">
+          {`Experienced delivering production-grade CRM, fintech, and e-commerce platforms with measurable business impact — including a Sales CRM managing 2,000+ leads and a fintech platform serving 1,500+ investors. Adept at crafting performant frontends using React ecosystem tools including Next.js, Redux, React Query, React Flow, TanStack Table, shadcn/ui, MUI, and Chakra UI.`}
+        </ParaText>
+        <ParaText className="!text-sm md:!text-base leading-relaxed text-gray-300">
+          {`Strong problem-solver with 700+ DSA problems solved across LeetCode, Codeforces, and CodeChef. Open to Full Stack, Frontend, and Backend engineering roles.`}
         </ParaText>
       </div>
       <div className="space-y-4">
         <MainHeading>{`What I'm Doing`}</MainHeading>
         <div className="grid grid-cols-2 gap-4">
           {expertise.map((item, idx) => (
-            <div key={idx} className="flex p-4 rounded-lg bg-gray-400/10 justify-between gap-4 shadow shadow-gray-400/30">
-              <div className="text-cyan-500 text-3xl pt-1">
+            <div key={idx} className="flex p-4 rounded-lg bg-gray-400/10 justify-between gap-4 shadow shadow-gray-400/30 hover:bg-gray-400/15 hover:shadow-cyan-500/10 hover:border-cyan-500/20 border border-transparent transition-all duration-300">
+              <div className="text-cyan-500 text-3xl pt-1 shrink-0">
                 <item.icon />
               </div>
               <div className="grow flex items-start justify-start gap-2 flex-col">
@@ -104,3 +106,4 @@ export default function Home() {
     </HeadingWrapper>
   );
 }
+
